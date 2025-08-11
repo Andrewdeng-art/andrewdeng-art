@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .logo img {
+  height: 40px;
+  border-radius: 15px;
+}
+.navbar .logo span {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: #ffd700;
+}
+
+/* Main Content */
+.about-page {
+  max-width: 1000px;
+  margin: 100px auto 50px;
+  padding: 0 20px;
+}
+
+.about-page section {
+  margin-bottom: 50px;
+}
+
+.about-page h1,
+.about-page h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mission,
+.vision {
+  flex: 1;
+  min-width: 280px;
+  background: #eaf2fb;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Beliefs List */
+.beliefs ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+footer .social-links a {
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
