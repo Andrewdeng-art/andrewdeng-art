@@ -20,7 +20,7 @@ h2 {
 /* Banner */
 .banner {
   height: 100vh;
-  background: url("../images/chruch.png.png") no-repeat center center/cover;
+  background: url("images/chruch.png.png") no-repeat center center/cover;
   position: relative;
 }
 
@@ -244,5 +244,6 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
