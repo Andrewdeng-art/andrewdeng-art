@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>About Us - Drewski Mancave</title>
+  </head>
+
+  <body>
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="close-btn" onclick="toggleSidebar()">✕</span>
+        <h2>Drewski</h2>
+      </div>
+
+      <ul class="menu-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/about.html">About Us</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+        <li><a href="/pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="content" id="content">
+      <h1 class="about-header">ABOUT US</h1>
+
+      <p class="about-summary">
+        Welcome to Drewski Mancave — a space built with passion, creativity, and
+        dedication. Our mission is to provide meaningful experiences, quality
+        content, and services that inspire individuals and bring value to
+        communities.
+      </p>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <img src="/images/mission.jpg" alt="Our Mission" />
+          <h3>Our Mission</h3>
+          <p>
+            To empower individuals through innovative ideas and reliable
+            services.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <img src="/images/values.jpg" alt="Our Values" />
+          <h3>Our Values</h3>
+          <p>
+            Integrity, consistency, and creativity form the foundation of what
+            we do.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <img src="/images/vision.jpg" alt="Our Vision" />
+          <h3>Our Vision</h3>
+          <p>
+            To become a leading brand known for innovation and excellence
+            worldwide.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 Drewski Mancave. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("active");
+        document.getElementById("content").classList.toggle("shift");
+      }
+    </script>
+  </body>
+</html>

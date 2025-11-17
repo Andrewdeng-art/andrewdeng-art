@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 15px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.sidebar {
+  width: 260px;
+  height: 100%;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: -260px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  padding-top: 20px;
+  z-index: 999;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.sidebar-header h2 {
+  color: #a900ff;
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.menu-links a {
+  display: block;
+  text-decoration: none;
+  padding: 14px 25px;
+  font-size: 18px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.menu-links a:hover,
+.menu-links a.active {
+  background: #b135ff;
+  color: white;
+}
+
+.content {
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+}
+
+.content.shift {
+  margin-left: 260px;
+}
+.blog-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.blog-header p {
+  font-size: 18px;
+  color: #555;
+}
+.blog-article {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-article img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.blog-article h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #a900ff;
+}
+
+.blog-article p {
+  font-size: 17px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: #ffffff;
+  color: #444;
+  font-size: 16px;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}

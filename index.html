@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drewski Mancave</title>
+  </head>
+
+  <body>
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="close-btn" onclick="toggleSidebar()">✕</span>
+        <h2>MENU</h2>
+      </div>
+
+      <ul class="menu-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/about.html">About Us</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+        <li><a href="/pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="content" id="content">
+      <div class="groceryshop">
+        <h1><b>GROCERY SHOP</b></h1>
+      </div>
+
+      <div class="manenos">
+        <h2>INTRODUCTION TO SHOP</h2>
+        <img src="/images/groceryshopimage.png" alt="picha ya groceryshop" />
+        <p>
+          <strong>Welcome to our Grocery Shop!</strong> We are committed to
+          providing fresh, high-quality fruits at affordable prices for all our
+          customers. Our shop sources produce from trusted local farmers to
+          ensure every item you purchase is nutritious, delicious, and handled
+          with care.
+        </p>
+
+        <table cellpadding="6" border="1">
+          <tr>
+            <th>FRUIT</th>
+            <th>PRICE</th>
+          </tr>
+          <tr>
+            <td>Orange</td>
+            <td>Ksh 20</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Ksh 10</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Ksh 30</td>
+          </tr>
+          <tr>
+            <td>Melon</td>
+            <td>Ksh 100</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© 2025 Drewski Mancave. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("active");
+        document.getElementById("content").classList.toggle("shift");
+      }
+    </script>
+  </body>
+</html>

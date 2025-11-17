@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/pages/contact.css" />
+    <title>Contact Us – Drewski Mancave</title>
+  </head>
+
+  <body>
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="close-btn" onclick="toggleSidebar()">✕</span>
+        <h2>MENU</h2>
+      </div>
+
+      <ul class="menu-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/about.html">About Us</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+        <li><a href="/pages/contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="content" id="content">
+      <div class="contact-header">
+        <h1>Get In Touch With Us</h1>
+        <p>We’d love to hear from you. Send us a message below.</p>
+      </div>
+
+      <div class="contact-container">
+        <form class="contact-form">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+          />
+
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 Drewski Mancave. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("active");
+        document.getElementById("content").classList.toggle("shift");
+      }
+    </script>
+  </body>
+</html>

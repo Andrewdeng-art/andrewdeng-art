@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/pages/blog.css" />
+    <title>Blog – Drewski Mancave</title>
+  </head>
+
+  <body>
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="close-btn" onclick="toggleSidebar()">✕</span>
+        <h2>MENU</h2>
+      </div>
+
+      <ul class="menu-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/about.html">About Us</a></li>
+        <li><a href="/pages/blog.html" class="active">Blog</a></li>
+        <li><a href="/pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="content" id="content">
+      <div class="blog-header">
+        <h1>Fruit Insights & Fresh Stories</h1>
+        <p>Explore health benefits, fun facts, and everything fruity!</p>
+      </div>
+      <div class="blog-article">
+        <img src="/images/redapple.jpg" alt="Fresh red apple" />
+
+        <h2>The Amazing Apple: Nature’s Crunchy Superfruit</h2>
+
+        <p>
+          Apples have long been celebrated as one of the healthiest fruits you
+          can add to your diet. Packed with vitamins, antioxidants, and dietary
+          fiber, they offer a wide range of health benefits while remaining
+          incredibly tasty and convenient.
+        </p>
+
+        <p>
+          One of the standout nutrients in apples is soluble fiber, particularly
+          pectin. This helps stabilize blood sugar levels, support digestion,
+          and keep you feeling full for longer. Apples are also rich in vitamin
+          C, which strengthens the immune system and promotes healthy skin.
+        </p>
+
+        <p>
+          Beyond nutrition, apples come in hundreds of varieties—sweet, sour,
+          crisp, or soft—making them a versatile ingredient for juice, pies,
+          salads, or just a simple crunchy snack. Truly, an apple a day might
+          not solve everything… but it’s definitely a delicious start!
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© 2025 Drewski Mancave. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("active");
+        document.getElementById("content").classList.toggle("shift");
+      }
+    </script>
+  </body>
+</html>
